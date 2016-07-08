@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route('/friznit/<arg>')
-def hello_world():
+def hello_world(arg = 'nothing'):
     return 'This is the arg' + arg
 
 
