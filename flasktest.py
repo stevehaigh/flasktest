@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/friznit/')
+@app.route('/friznit/<arg>')
 def hello_world():
-    return 'Hello World!'
+    return 'This is the arg' + arg
 
 
 if __name__ == '__main__':
